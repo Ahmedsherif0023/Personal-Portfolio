@@ -21,6 +21,7 @@ export const Contact = () => {
       );
   };
 
+
   return (
 <div className='ffo' id='connect'>
   <div className='animate__animated animate__zoomIn zzzz'>
@@ -34,7 +35,12 @@ export const Contact = () => {
         <input className='zzxx' type="email" name="from_email" />
         <h2>Message</h2>
         <textarea name="message" />
-        <input className='zxxz' type="submit" value="Send" />
+          <input className='zxxz' type="submit" value="Send"  />
+    
+
+
+
+        
       </form>
 </div>
   );
