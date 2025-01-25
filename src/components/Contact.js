@@ -22,7 +22,7 @@ export const Contact = () => {
   };
 
   return (
-<div className='ffo'>
+<div className='ffo' id='connect'>
   <div className='animate__animated animate__zoomIn zzzz'>
     <img src="/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg" alt="" />
   </div>

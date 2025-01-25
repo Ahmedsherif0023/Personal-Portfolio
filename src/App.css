@@ -688,7 +688,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 } */
 
-/* .xz{
+.xz{
   width: 45%;
   border: #AA367C 2px solid;
   border-radius: 5px;
@@ -702,7 +702,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #AA367C;
   transform: scale(1.2);
   transition: 0.2s ease-in-out;
-} */
+}
+
 
 /************ Footer Css ************/
 .footer {
