@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import headerImg from "../assets/img/header-img.svg";
+import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
   const form = useRef();
@@ -24,10 +26,14 @@ export const Contact = () => {
 
   return (
 <div className='ffo' id='connect'>
-  <div className='animate__animated animate__zoomIn zzzz'>
-    <img src="/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg" alt="" />
-  </div>
-      <form ref={form} onSubmit={sendEmail}>
+<TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__zoomIn zzxzz" : ""}>
+                  <img src={headerImg} alt="Header Img"/>
+                </div>}
+            </TrackVisibility>
+
+      <form ref={form} onSubmit={sendEmail} className='formm'>
         <h2>Full name</h2>
         <input className='zzxx' type="text" name="from_name" />
       
@@ -45,3 +51,7 @@ export const Contact = () => {
 </div>
   );
 };
+
+// <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>>
+//     <img src="/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg" alt="" />
+//   </div>

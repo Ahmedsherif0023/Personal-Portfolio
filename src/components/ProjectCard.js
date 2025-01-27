@@ -10,13 +10,14 @@ export const ProjectCard = ({ title, description, imgUrl , projlink , code}) => 
           <span>{description}</span>
         </div>
       </div>
-          <a href={projlink} target="_blank">
-            <button className="xz">Project Link</button>
-            
-          </a>
-          <a href={code} target="_blank">
-            <button className="xz">Code For Project</button>
-          </a>
+        <div className="bttn"> 
+            <a href={projlink} target="_blank">
+              <button className="xz">Project Link</button>
+            </a>
+            <a href={code} target="_blank">
+              <button className="xz">Code For Project</button>
+            </a>
+        </div>
     </Col>
   )
 }
